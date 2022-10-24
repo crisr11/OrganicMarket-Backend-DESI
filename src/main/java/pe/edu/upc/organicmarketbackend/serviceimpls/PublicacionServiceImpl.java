@@ -22,4 +22,14 @@ public class PublicacionServiceImpl implements IPublicacionService {
     public List<Publicacion> list() {
         return pR.findAll();
     }
+
+    @Override
+    public void delete(int idPublicacion) {
+        pR.deleteById(idPublicacion);
+    }
+
+    @Override
+    public List<Publicacion> search(String contenido) {
+        return pR.buscarContenido(contenido);
+    }
 }
