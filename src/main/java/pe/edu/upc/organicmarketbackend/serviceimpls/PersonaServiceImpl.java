@@ -21,4 +21,14 @@ public class PersonaServiceImpl implements IPersonaService {
     public List<Persona> list() {
         return pR.findAll();
     }
+
+    @Override
+    public void delete(int idPersona) {
+        pR.deleteById(idPersona);
+    }
+
+    @Override
+    public List<Persona> search(String nombrePersona) {
+        return pR.buscarNombre(nombrePersona);
+    }
 }
