@@ -7,4 +7,6 @@ import java.util.List;
 public interface IPersonaService {
     public void insert(Persona persona);
     List<Persona>list();
+    public void delete (int idPersona);
+    List<Persona>search(String nombrePersona);
 }
