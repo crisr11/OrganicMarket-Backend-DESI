@@ -20,5 +20,20 @@ public class AgricultorController {
     public List<Agricultor> listar() {
         return aService.list();
     }
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id") Integer id)
+    {
+        aService.delete(id);
+    }
+    @PutMapping
+    public void actualizar(@RequestBody  Agricultor a) {
+        aService.insert(a);
+    }
+
+    @PostMapping("/buscar")
+    public List<Agricultor> buscar(@RequestBody Agricultor a)
+    {
+        return aService.search(a.getDireccionAgricultor());
+    }
 }
 

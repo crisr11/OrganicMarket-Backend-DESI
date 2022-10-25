@@ -20,6 +20,16 @@ public class AgricultorServiceImpl implements iAgricultorService {
     public List<Agricultor> list() {
         return aR.findAll();
     }
+
+    @Override
+    public void delete(int idAgricultor) {
+            aR.deleteById(idAgricultor);
+    }
+
+    @Override
+    public List<Agricultor> search(String direccionAgricultor) {
+        return aR.buscarNombre(direccionAgricultor);
+    }
 }
 
 
