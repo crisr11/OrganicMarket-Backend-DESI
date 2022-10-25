@@ -1,5 +1,6 @@
 package pe.edu.upc.organicmarketbackend.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -13,10 +14,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
     @Bean
     public Docket apiDocket(){
+  
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("pe.edu.upc.organicmarketbackend.controllers"))
                 .paths(PathSelectors.any())
                 .build();
     }
+
 }

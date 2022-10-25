@@ -9,9 +9,13 @@
         <module name="organicmarketbackend" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="OrganicMarket-Backend4" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="OrganicMarket-Backend4" options="-parameters" />
       <module name="organicmarketbackend" options="-parameters" />
     </option>
   </component>
