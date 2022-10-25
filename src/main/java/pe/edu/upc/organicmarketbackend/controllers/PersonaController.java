@@ -20,6 +20,18 @@ public class PersonaController {
     public List<Persona>listar(){
         return pService.list();
     }
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable("id")Integer id){
+        pService.delete(id);
+    }
+    @PutMapping
+    public void actualizar(@RequestBody Persona p){
+        pService.insert(p);
+    }
+    @PostMapping("/buscar")
+    public List<Persona>buscar(@RequestBody Persona p){
+        return pService.search(p.getNombrePersona());
+    }
 
 }
 
