@@ -6,6 +6,8 @@ import pe.edu.upc.organicmarketbackend.entities.Agricultor;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.iAgricultorService;
 
 import java.util.List;
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/agricultores")
 public class AgricultorController {
@@ -34,6 +36,11 @@ public class AgricultorController {
     public List<Agricultor> buscar(@RequestBody Agricultor a)
     {
         return aService.search(a.getDireccionAgricultor());
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Agricultor> listarId(@PathVariable("id") Integer id) {
+        return aService.listarId(id);
     }
 }
 
