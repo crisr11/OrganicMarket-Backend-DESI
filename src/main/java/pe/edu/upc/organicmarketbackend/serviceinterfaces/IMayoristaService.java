@@ -6,8 +6,9 @@ import pe.edu.upc.organicmarketbackend.entities.Mayorista;
 
 import java.util.List;
 
-@Service
 public interface IMayoristaService {
     public void insert(Mayorista mayorista);
     List<Mayorista>list();
+    public void delete(int idMayorista);
+    List<Mayorista>search(String name);
 }
