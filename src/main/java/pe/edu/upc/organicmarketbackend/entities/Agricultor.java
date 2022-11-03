@@ -9,8 +9,9 @@ public class Agricultor {
     private int idAgricultor;
     @Column(name = "direccion",length = 70,nullable = false)
     private String direccionAgricultor;
-    @Column(name = "persona_id_persona",length = 35)
-    private int persona_id_persona;
+    @ManyToOne
+    @JoinColumn(name = "idPersona",nullable = false)
+    private Persona persona;
 
     public Agricultor() {
     }
@@ -23,8 +24,8 @@ public class Agricultor {
         return direccionAgricultor;
     }
 
-    public int getPersona_id_persona() {
-        return persona_id_persona;
+    public Persona getPersona() {
+        return persona;
     }
 
     public void setIdAgricultor(int idAgricultor) {
@@ -35,7 +36,7 @@ public class Agricultor {
         this.direccionAgricultor = direccionAgricultor;
     }
 
-    public void setPersona_id_persona(int persona_id_persona) {
-        this.persona_id_persona = persona_id_persona;
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 }
