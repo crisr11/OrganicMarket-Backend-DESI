@@ -3,10 +3,12 @@ package pe.edu.upc.organicmarketbackend.serviceinterfaces;
 import pe.edu.upc.organicmarketbackend.entities.Publicacion;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IPublicacionService {
-    public void insert(Publicacion publicacion);
-    List<Publicacion> list();
-    public void delete(int idPublicacion);
-    List<Publicacion>search(String contenido);
+    public boolean insertar(Publicacion publicacion);
+    public void eliminar(int idPublicacion);
+    Optional<Publicacion>listarId(int idPublicacion);
+    List<Publicacion> listar();
+    List<Publicacion>buscarPorContenido(String contenido);
 }
