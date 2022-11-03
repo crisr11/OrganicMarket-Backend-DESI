@@ -12,7 +12,7 @@ public interface IProductoService {
 
     public void delete(int idProducto);
 
-    List<Producto>search(String nameProducto);
+    List<Producto>search(String idOrden);
 }
 
 
