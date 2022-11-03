@@ -20,11 +20,24 @@ public class Producto {
     @Column(name = "idAgricultor", nullable = false)
     private int idAgricultor;
 
-    public Producto(int idProducto, String nameProducto, int precio, int idAgricultor) {
+    @ManyToOne
+    @JoinColumn(name = "idTipo", nullable = false)
+    private Tipo tipo;
+
+    public Producto(int idProducto, String nameProducto, int precio, int idAgricultor, Tipo tipo) {
         this.idProducto = idProducto;
         this.nameProducto = nameProducto;
         this.precio = precio;
         this.idAgricultor = idAgricultor;
+        this.tipo = tipo;
+    }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
     }
 
     public Producto() {
