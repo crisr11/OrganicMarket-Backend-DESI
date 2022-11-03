@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/../demoMayorista/src/test/test.iml" filepath="$PROJECT_DIR$/../demoMayorista/src/test/test.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/../demoBackend/demo/src/test/test.iml" filepath="$PROJECT_DIR$/../demoBackend/demo/src/test/test.iml" />
+>>>>>>> main
     </modules>
   </component>
 </project>

@@ -10,19 +10,21 @@ public class Publicacion {
     private int idPublicacion;
     @Column(name = "contenido", length = 70, nullable = false)
     private String contenido;
-    @Column(name = "id_agricultor", nullable = false)
-    private int id_agricultor;
-    @Column(name = "id_producto", nullable = false)
-    private int id_producto;
+    @ManyToOne
+    @JoinColumn(name = "idAgricultor", nullable = false)
+    private Agricultor agricultor;
+    @ManyToOne
+    @JoinColumn(name = "idProducto", nullable = false)
+    private Producto producto;
 
     public Publicacion() {
     }
 
-    public Publicacion(int idPublicacion, String contenido, int id_agricultor, int id_producto) {
+    public Publicacion(int idPublicacion, String contenido, Agricultor agricultor, Producto producto) {
         this.idPublicacion = idPublicacion;
         this.contenido = contenido;
-        this.id_agricultor = id_agricultor;
-        this.id_producto = id_producto;
+        this.agricultor = agricultor;
+        this.producto = producto;
     }
 
     public int getIdPublicacion() {
@@ -41,19 +43,19 @@ public class Publicacion {
         this.contenido = contenido;
     }
 
-    public int getId_agricultor() {
-        return id_agricultor;
+    public Agricultor getAgricultor() {
+        return agricultor;
     }
 
-    public void setId_agricultor(int id_agricultor) {
-        this.id_agricultor = id_agricultor;
+    public void setAgricultor(Agricultor agricultor) {
+        this.agricultor = agricultor;
     }
 
-    public int getId_producto() {
-        return id_producto;
+    public Producto getProducto() {
+        return producto;
     }
 
-    public void setId_producto(int id_producto) {
-        this.id_producto = id_producto;
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }
