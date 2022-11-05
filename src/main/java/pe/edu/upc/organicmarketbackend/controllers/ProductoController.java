@@ -6,6 +6,7 @@ import pe.edu.upc.organicmarketbackend.entities.Producto;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IProductoService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/productos")
@@ -39,5 +40,8 @@ public class ProductoController {
         return pService.search(p.getNameProducto());
     }
 
-
+    @GetMapping("/{id}")
+    public Optional<Producto> listarID(@PathVariable("id") Integer id){
+        return pService.listID(id);
+    }
 }

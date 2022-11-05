@@ -6,6 +6,7 @@ import pe.edu.upc.organicmarketbackend.entities.Tipo;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.ITipoService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/tipos")
@@ -32,5 +33,10 @@ public class TipoController {
     @PostMapping("/buscar")
     public List<Tipo> buscar(@RequestBody Tipo t){
         return tService.search(t.getNameTipo());
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Tipo> listarID(@PathVariable("id") Integer id){
+        return tService.listID(id);
     }
 }
