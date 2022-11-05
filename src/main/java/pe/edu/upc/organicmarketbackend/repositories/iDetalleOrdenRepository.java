@@ -11,7 +11,9 @@ import java.util.List;
 @Repository
 public interface iDetalleOrdenRepository extends JpaRepository<DetalleOrden,Integer> {
 
-    @Query("from DetalleOrden d where upper(d.nameProducto) like %:nameProducto% or lower(d.nameProducto)"+
-    "like %:nameProducto% or d.nameProducto like %:nameProducto%")
+    /*@Query("from DetalleOrden d where d.producto.idProducto= Producto.idProducto " +
+           "and d.producto.nameProducto like%:nameProducto% ")*/
+    @Query("from DetalleOrden d where d.producto.nameProducto like %:nameProducto%")
     List<DetalleOrden> buscarNombre(@Param("nameProducto")String nameProducto);
+
 }
