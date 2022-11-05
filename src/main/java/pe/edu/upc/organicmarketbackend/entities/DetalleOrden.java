@@ -1,24 +1,34 @@
 package pe.edu.upc.organicmarketbackend.entities;
 
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import java.io.Serializable;
 
 @Entity
 @Table(name = "DetalleOrden")
-public class DetalleOrden {
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class DetalleOrden implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idOrden;
-    @Column(name = "idProducto",length = 35)
-    private int idProducto;
-    @Column(name = "nameProducto",length = 50,nullable = false)
-    private String nameProducto;
+    @ManyToOne
+    @JoinColumn(name = "idProducto", nullable = false)
+    private Producto producto;
 
     public DetalleOrden() {
+        super();
     }
 
-    public DetalleOrden(int idProducto, String nameProducto) {
-        this.idProducto = idProducto;
-        this.nameProducto = nameProducto;
+    public DetalleOrden(int idOrden, Producto producto) {
+        this.idOrden = idOrden;
+        this.producto = producto;
     }
 
     public int getIdOrden() {
@@ -29,22 +39,11 @@ public class DetalleOrden {
         this.idOrden = idOrden;
     }
 
-    public int getIdProducto() {
-        return idProducto;
+    public Producto getProducto() {
+        return producto;
     }
 
-    public void setIdProducto(int idProducto) {
-        this.idProducto = idProducto;
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
-
-    public String getNameProducto() {
-        return nameProducto;
-    }
-
-    public void setNameProducto(String nameProducto) {
-        this.nameProducto = nameProducto;
-    }
-
-
-
 }
