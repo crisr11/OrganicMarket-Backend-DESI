@@ -34,13 +34,18 @@ public class Orden {
     @JoinColumn (name="idAgricultor", nullable = false)
     private Agricultor agricultor;
 
-    public Orden(int idOrden, LocalDate fechaCompra, LocalDate fechaEnvio, LocalDate fechaEntrega, int cantidad, Agricultor agricultor) {
+    @ManyToOne
+    @JoinColumn (name="idMayorista", nullable = false)
+    private Mayorista mayorista;
+
+    public Orden(int idOrden, LocalDate fechaCompra, LocalDate fechaEnvio, LocalDate fechaEntrega, int cantidad, Agricultor agricultor, pe.edu.upc.organicmarketbackend.entities.Mayorista mayorista) {
         this.idOrden = idOrden;
         this.fechaCompra = fechaCompra;
         this.fechaEnvio = fechaEnvio;
         this.fechaEntrega = fechaEntrega;
         this.cantidad = cantidad;
         this.agricultor = agricultor;
+        this.mayorista = mayorista;
     }
 
     public Orden() {
@@ -94,4 +99,8 @@ public class Orden {
     public void setAgricultor(Agricultor agricultor) {
         this.agricultor = agricultor;
     }
+
+    public Mayorista getMayorista() {return mayorista;}
+
+    public void setMayorista(Mayorista mayorista) {this.mayorista = mayorista;}
 }
