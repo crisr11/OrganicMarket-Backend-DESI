@@ -7,6 +7,7 @@ import pe.edu.upc.organicmarketbackend.repositories.IProductoRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IProductoService;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductoServiceImpl implements IProductoService {
@@ -21,4 +22,9 @@ public class ProductoServiceImpl implements IProductoService {
     public void delete(int idProducto) {proR.deleteById(idProducto);}
     @Override
     public List<Producto> search(String nameProducto) {return proR.buscarNombre(nameProducto);}
+
+    @Override
+    public Optional<Producto> listID(int idProducto) {
+        return proR.findById(idProducto);
+    }
 }
