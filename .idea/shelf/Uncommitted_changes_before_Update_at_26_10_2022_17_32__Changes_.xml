@@ -1,0 +1,39 @@
+<changelist name="Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]" date="1666823569473" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 26/10/2022 17:32 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PersonaServiceImpl.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PersonaServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/PersonaServiceImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPublicacionService.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPublicacionService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/IPublicacionService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/repositories/IPublicacionRepository.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/repositories/IPublicacionRepository.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/IPublicacionRepository.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PublicacionServiceImpl.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PublicacionServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/PublicacionServiceImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/config/SwaggerConfig.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/config/SwaggerConfig.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/SwaggerConfig.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPersonaService.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPersonaService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/IPersonaService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/repositories/IPersonaRepository.class" />
+    <option name="AFTER_PATH" value="target/classes/pe/edu/upc/organicmarketbackend/repositories/IPersonaRepository.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32_[Changes]/IPersonaRepository.class" />
+  </binary>
+</changelist>
