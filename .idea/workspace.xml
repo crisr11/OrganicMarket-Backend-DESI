@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Actualizar">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Actualizar-Jhomax">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Orden.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Orden.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/ProductoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/ProductoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IProductoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IProductoService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667706478846</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Actualizar-Jhomax">
+      <created>1667864485865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667864485866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +124,7 @@
     <MESSAGE value="cv" />
     <MESSAGE value="Merge Alexis Branch" />
     <MESSAGE value="Actualizar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizar" />
+    <MESSAGE value="Actualizar-Jhomax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizar-Jhomax" />
   </component>
 </project>
