@@ -1,6 +1,5 @@
 package pe.edu.upc.organicmarketbackend.serviceinterfaces;
 
-import pe.edu.upc.organicmarketbackend.entities.Agricultor;
 import pe.edu.upc.organicmarketbackend.entities.Persona;
 
 import java.util.List;
@@ -11,5 +10,5 @@ public interface IPersonaService {
     List<Persona>list();
     public void delete (int idPersona);
     List<Persona>search(String nombrePersona);
-    public Optional<Persona> listarId(int idPersona);
+    public Optional<Persona>listarId(int idPersona);
 }
