@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Cambios">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/entities/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/entities/Producto.java" afterDir="false" />
+    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Errores arreglados">
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Producto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667866375588</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Errores arreglados">
+      <created>1667962958823</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667962958823</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +140,7 @@
     <MESSAGE value="Actualizar" />
     <MESSAGE value="Actualizar-Jhomax" />
     <MESSAGE value="Cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios" />
+    <MESSAGE value="Errores arreglados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Errores arreglados" />
   </component>
 </project>
