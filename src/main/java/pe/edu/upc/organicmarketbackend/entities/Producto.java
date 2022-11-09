@@ -17,18 +17,19 @@ public class Producto {
     @Column(name = "precio", length = 30, nullable = false)
     private int precio;
 
-    @Column(name = "idAgricultor", nullable = false)
-    private int idAgricultor;
 
     @ManyToOne
     @JoinColumn(name = "idTipo", nullable = false)
     private Tipo tipo;
 
-    public Producto(int idProducto, String nameProducto, int precio, int idAgricultor, Tipo tipo) {
+    public Producto() {
+    }
+
+    public Producto(int idProducto, String nameProducto, int precio, Tipo tipo) {
         this.idProducto = idProducto;
         this.nameProducto = nameProducto;
         this.precio = precio;
-        this.idAgricultor = idAgricultor;
+
         this.tipo = tipo;
     }
 
@@ -40,9 +41,7 @@ public class Producto {
         this.tipo = tipo;
     }
 
-    public Producto() {
 
-    }
 
     public int getIdProducto() {return idProducto;}
 
@@ -56,7 +55,6 @@ public class Producto {
 
     public void setPrecio(int precio) {this.precio = precio;}
 
-    public int getIdAgricultor() {return idAgricultor;}
 
-    public void setIdAgricultor(int idAgricultor) {this.idAgricultor = idAgricultor;}
+
 }
