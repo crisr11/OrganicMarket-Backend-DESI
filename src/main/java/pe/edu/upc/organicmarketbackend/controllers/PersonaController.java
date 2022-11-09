@@ -6,6 +6,7 @@ import pe.edu.upc.organicmarketbackend.entities.Persona;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IPersonaService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/personas")
@@ -32,6 +33,9 @@ public class PersonaController {
     public List<Persona>buscar(@RequestBody Persona p){
         return pService.search(p.getNombrePersona());
     }
+
+    @GetMapping("/{id}")
+    public Optional<Persona> listarId(@PathVariable("id")Integer id){return pService.listarId(id);}
 
 }
 
