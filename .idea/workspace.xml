@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Errores arreglados">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/OrdenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/OrdenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/OrganicmarketbackendApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/AgricultorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/DetalleOrdenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/MayoristaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/OrdenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/PersonaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/ProductoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/PromocionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/PublicacionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/controllers/TipoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Administrador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Agricultor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/DetalleOrden.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Mayorista.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Orden.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Promocion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Publicacion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/entities/Tipo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IAdministradorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IMayoristaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IOrdenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IPersonaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IProductoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IPromocionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/IPublicacionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/ITipoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/iAgricultorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/repositories/iDetalleOrdenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/AdministradorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/AgricultorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/DetalleOrdenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/MayoristaServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/OrdenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PersonaServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/ProductoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PromocionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/PublicacionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceimpls/TipoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IAdministradorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IMayoristaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IOrdenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPersonaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IProductoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPromocionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPublicacionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/ITipoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/iAgricultorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/serviceinterfaces/iDetalleOrdenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upc/organicmarketbackend/util/CORS.class" beforeDir="false" />
-    </list>
+    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Configuracion para heroku" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +81,7 @@
       <workItem from="1667689339839" duration="35000" />
       <workItem from="1667689378294" duration="233000" />
       <workItem from="1668010714619" duration="2087000" />
-      <workItem from="1668021585306" duration="2137000" />
+      <workItem from="1668021585306" duration="2765000" />
     </task>
     <task id="LOCAL-00001" summary="Merge Alexis Branch">
       <created>1667690018679</created>
@@ -190,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667963393598</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Configuracion para heroku">
+      <created>1668024321567</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668024321567</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +163,7 @@
     <MESSAGE value="Actualizar-Jhomax" />
     <MESSAGE value="Cambios" />
     <MESSAGE value="Errores arreglados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Errores arreglados" />
+    <MESSAGE value="Configuracion para heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion para heroku" />
   </component>
 </project>
