@@ -7,6 +7,7 @@ import pe.edu.upc.organicmarketbackend.repositories.IPersonaRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IPersonaService;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PersonaServiceImpl implements IPersonaService {
@@ -29,6 +30,11 @@ public class PersonaServiceImpl implements IPersonaService {
 
     @Override
     public List<Persona> search(String nombrePersona) {
-        return pR.buscarNombre(nombrePersona);
+        return pR.buscar(nombrePersona);
+    }
+
+    @Override
+    public Optional<Persona> listarId(int idPersona) {
+        return pR.findById(idPersona);
     }
 }
