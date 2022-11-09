@@ -36,7 +36,8 @@ public class OrdenController {
 
     @PostMapping("/buscar")
     public List<Orden> buscar(@RequestBody Orden o){
-        return oService.search(o.getIdOrden());
+        return null;
+        //return oService.search(o.getIdOrden());
     }
 
 }
