@@ -23,8 +23,10 @@ public class PublicacionController {
     @GetMapping
     public List<Publicacion>listar(){return pService.listar();}
     @PostMapping("/buscar")
-    public List<Publicacion>buscar (@RequestBody Publicacion p) throws ParseException {
-    return pService.buscarPorContenido(p.getContenido());
+    public List<Publicacion>buscar (@RequestBody String contenido) throws ParseException {
+        List<Publicacion> listaPublicaciones;
+        listaPublicaciones = pService.buscarPorContenido(contenido);
+        return listaPublicaciones;
     }
     @GetMapping("/{id}")
     public Optional<Publicacion> listarId(@PathVariable("id") Integer id) {
