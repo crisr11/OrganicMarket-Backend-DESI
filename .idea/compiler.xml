@@ -11,7 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="OrganicMarket-Backend4" target="17" />
-      <module name="organicmarketbackend" target="17" />
+      <module name="organicmarketbackend" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
