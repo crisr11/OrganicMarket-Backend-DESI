@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Configuracion para heroku" />
+    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="_">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +84,7 @@
       <workItem from="1667689339839" duration="35000" />
       <workItem from="1667689378294" duration="233000" />
       <workItem from="1668010714619" duration="2087000" />
-      <workItem from="1668021585306" duration="2765000" />
+      <workItem from="1668021585306" duration="3592000" />
     </task>
     <task id="LOCAL-00001" summary="Merge Alexis Branch">
       <created>1667690018679</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668024321567</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Configuracion para heroku">
+      <created>1668024871999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668024871999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +174,7 @@
     <MESSAGE value="Cambios" />
     <MESSAGE value="Errores arreglados" />
     <MESSAGE value="Configuracion para heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuracion para heroku" />
+    <MESSAGE value="_" />
+    <option name="LAST_COMMIT_MESSAGE" value="_" />
   </component>
 </project>
