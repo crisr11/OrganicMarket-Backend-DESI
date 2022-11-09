@@ -30,7 +30,7 @@ public class PersonaServiceImpl implements IPersonaService {
 
     @Override
     public List<Persona> search(String nombrePersona) {
-        return pR.buscarNombre(nombrePersona);
+        return pR.buscar(nombrePersona);
     }
 
     @Override
@@ -38,3 +38,4 @@ public class PersonaServiceImpl implements IPersonaService {
         return pR.findById(idPersona);
     }
 }
+

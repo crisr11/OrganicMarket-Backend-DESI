@@ -5,33 +5,35 @@ import javax.persistence.*;
 @Entity
 @Table(name="Administrador")
 public class Administrador {
+    private static final long serialVerionUID=1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idAdministrador;
-    @Column(name="idPersona",nullable = false)
-    private int persona_id_persona;
+    @ManyToOne
+    @JoinColumn (name="idPersona",nullable = false)
+    private Persona persona;
 
     public Administrador() {
     }
 
-    public Administrador(int idAdministrador, int persona_id_persona) {
+    public Administrador(int idAdministrador, Persona persona) {
         this.idAdministrador = idAdministrador;
-        this.persona_id_persona = persona_id_persona;
+        this.persona = persona;
     }
 
     public int getIdAdministrador() {
         return idAdministrador;
     }
 
-    public int getPersona_id_persona() {
-        return persona_id_persona;
+    public Persona getPersona() {
+        return persona;
     }
 
     public void setIdAdministrador(int idAdministrador) {
         this.idAdministrador = idAdministrador;
     }
 
-    public void setPersona_id_persona(int persona_id_persona) {
-        this.persona_id_persona = persona_id_persona;
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 }
