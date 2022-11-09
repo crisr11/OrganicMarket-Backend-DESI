@@ -9,13 +9,13 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idPersona;
-    @Column(name="Nombre",length = 50,nullable = false)
+    @Column(name="nombrePersona",length = 50,nullable = false)
     private String nombrePersona;
-    @Column(name = "Dni",nullable = false)
+    @Column(name = "dniPersona",nullable = false)
     private int dniPersona;
-    @Column(name = "Telefono",nullable = false)
+    @Column(name = "telefonoPersona",nullable = false)
     private int telefonoPersona;
-    @Column(name = "Correo",nullable = false)
+    @Column(name = "correoPersona",nullable = false)
     private String correoPersona;
 
     public Persona() {
