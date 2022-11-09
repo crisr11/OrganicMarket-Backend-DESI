@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Errores arreglados">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/PersonaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/PersonaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/PersonaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPersonaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPersonaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IOrdenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IOrdenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/OrdenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/OrdenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IOrdenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IOrdenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +55,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "47b3aff7d10d6587f653fdfa4342a3b6"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="OrganicmarketbackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="organicmarketbackend" />
@@ -77,13 +80,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="41b79b5b-1427-4bcd-9738-8d0a27d7e078" name="Changes" comment="" />
+      <changelist id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Errores arreglados" />
       <created>1667689338443</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667689338443</updated>
       <workItem from="1667689339839" duration="35000" />
       <workItem from="1667689378294" duration="233000" />
+      <workItem from="1668010714619" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="Merge Alexis Branch">
       <created>1667690018679</created>

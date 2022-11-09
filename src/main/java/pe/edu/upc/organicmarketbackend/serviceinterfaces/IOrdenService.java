@@ -13,6 +13,6 @@ public interface IOrdenService {
 
     public void delete(int idOrden);
 
-    List<Orden>search(int idOrden);
+    List<Orden>search(String fechaCompra);
 
 }

@@ -11,5 +11,7 @@ import java.util.List;
 @Repository
 public interface IOrdenRepository extends JpaRepository<Orden, Integer> {
 
-    List<Orden> idOrden(@Param("idOrden") int idOrden);
+    @Query("SELECT m FROM Orden m WHERE lower(m.fechaCompra) like lower(concat('%',:fechaCompra,'%'))")
+    List<Orden> searchByName(@Param("fechaCompra") String fechaCompra);
+
 }

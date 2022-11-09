@@ -22,5 +22,5 @@ public class OrdenServiceImpl implements IOrdenService {
     public void delete(int idOrden) {pR.deleteById(idOrden);}
 
     @Override
-    public List<Orden> search(int idOrden) {return pR.idOrden (idOrden);}
+    public List<Orden> search(String fechaCompra) {return pR.searchByName(fechaCompra);}
 }
