@@ -38,9 +38,19 @@ public class AgricultorController {
         return aService.search(a.getDireccionAgricultor());
     }
 
+    @PostMapping("/buscardirecciones")
+    public List<Agricultor> buscardireccion(@RequestBody String direccion)
+    {
+        return aService.buscardireccion(direccion);
+    }
     @GetMapping("/{id}")
     public Optional<Agricultor> listarId(@PathVariable("id") Integer id) {
         return aService.listarId(id);
+    }
+
+    @GetMapping("/filtrarmiraflores")
+    public List<Agricultor> buscarmiraflores(){
+        return aService.buscarmiraflores();
     }
 }
 

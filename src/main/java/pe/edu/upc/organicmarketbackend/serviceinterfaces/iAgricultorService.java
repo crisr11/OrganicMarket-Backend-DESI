@@ -11,6 +11,10 @@ public interface iAgricultorService {
     List<Agricultor> search(String direccionAgricultor);
 
     public Optional<Agricultor> listarId(int idAgricultor);
+
+    List<Agricultor> buscardireccion(String direccionAgricultor);
+
+    List<Agricultor> buscarmiraflores();
     //primero el interface, luego el service implemtent y finalmente ir al controller, en caso de buscar ir primero al repositorio
 }
 

@@ -24,7 +24,7 @@ public class AgricultorServiceImpl implements iAgricultorService {
 
     @Override
     public void delete(int idAgricultor) {
-            aR.deleteById(idAgricultor);
+        aR.deleteById(idAgricultor);
     }
 
     @Override
@@ -36,6 +36,18 @@ public class AgricultorServiceImpl implements iAgricultorService {
     public Optional<Agricultor> listarId(int idAgricultor) {
         return aR.findById(idAgricultor);
     }
+
+    @Override
+    public List<Agricultor> buscardireccion(String direccionAgricultor) {
+        return aR.findByDireccionAgricultor(direccionAgricultor);
+    }
+
+    @Override
+    public List<Agricultor> buscarmiraflores() {
+        return aR.buscarmiraflores();
+    }
+
+
 }
 
 

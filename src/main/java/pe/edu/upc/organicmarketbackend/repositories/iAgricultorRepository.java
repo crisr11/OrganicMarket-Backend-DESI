@@ -12,7 +12,15 @@ import java.util.List;
 public interface iAgricultorRepository extends JpaRepository<Agricultor,Integer>{
     @Query("from Agricultor a where a.direccionAgricultor like %:direccionAgricultor%")
     List<Agricultor> buscarNombre(@Param("direccionAgricultor") String direccionAgricultor);
-//Control barra espaciadora despues de la t en el list
+
+    List<Agricultor> findByDireccionAgricultor(String direccion);
+
+    @Query(value = "select * from agricultor a where a.direccion like '%Miraflores'",nativeQuery = true)
+    List<Agricultor> buscarmiraflores();
+
+
+
+    //Control barra espaciadora despues de la t en el list
 }
 
 
