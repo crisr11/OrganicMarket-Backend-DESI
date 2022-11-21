@@ -3,6 +3,7 @@ package pe.edu.upc.organicmarketbackend.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.organicmarketbackend.entities.Promocion;
+import pe.edu.upc.organicmarketbackend.entities.Resultado;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IPromocionService;
 
 import java.text.ParseException;
@@ -36,5 +37,10 @@ public class PromocionController {
     @GetMapping("/{id}")
     public Optional<Promocion> listarId(@PathVariable("id") Integer id) {
         return promoService.listarId(id);
+    }
+
+    @GetMapping("/promonavidad")
+    public List<Resultado> promoNavidad(){
+        return promoService.promoNavidad();
     }
 }
