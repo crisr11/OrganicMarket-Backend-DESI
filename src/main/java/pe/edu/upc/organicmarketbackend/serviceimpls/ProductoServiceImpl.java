@@ -27,4 +27,9 @@ public class ProductoServiceImpl implements IProductoService {
     public Optional<Producto> listID(int idProducto) {
         return proR.findById(idProducto);
     }
+
+    @Override
+    public List<Producto> expensiveProduct() {
+        return proR.expensiveProduct();
+    }
 }

@@ -44,4 +44,9 @@ public class ProductoController {
     public Optional<Producto> listarID(@PathVariable("id") Integer id){
         return pService.listID(id);
     }
+
+    @GetMapping("/expensiveproduct")
+    public List<Producto> expensiveProduct(){
+        return pService.expensiveProduct();
+    }
 }

@@ -16,6 +16,8 @@ public interface IProductoService {
     List<Producto>search(String idOrden);
 
     Optional<Producto> listID(int idProducto);
+
+    List<Producto> expensiveProduct();
 }
 
 

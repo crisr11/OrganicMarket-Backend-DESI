@@ -12,4 +12,7 @@ import java.util.List;
 public interface IProductoRepository extends JpaRepository<Producto, Integer> {
     @Query("from Producto p where p.nameProducto like %:nameProducto%")
     List<Producto> buscarNombre(@Param("nameProducto") String nameProducto);
+
+    @Query(value = "select * from producto p where p.precio in (select max(precio) from producto)" , nativeQuery = true)
+    List<Producto> expensiveProduct();
 }
