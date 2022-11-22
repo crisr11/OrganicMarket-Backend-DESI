@@ -7,16 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="organicmarketbackend" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="17" />
       <module name="OrganicMarket-Backend4" target="17" />
-      <module name="organicmarketbackend" target="18" />
+      <module name="organicmarketbackend" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="OrganicMarket-Backend4" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="organicmarketbackend" options="-parameters" />
     </option>
   </component>

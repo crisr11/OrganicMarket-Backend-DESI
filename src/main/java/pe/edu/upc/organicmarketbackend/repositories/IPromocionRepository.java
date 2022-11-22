@@ -13,4 +13,7 @@ import java.util.List;
 public interface IPromocionRepository extends JpaRepository<Promocion, Integer> {
     List<Promocion> findByFechaInicio(Date fechaInicio);
     List<Promocion> findByFechaFin(Date fechaFin);
+
+    @Query(value = "select pro.name_producto,p.fecha_inicio,p.fecha_fin from agricultor a INNER JOIN promocion p ON a.id_agricultor = p.id_agricultor INNER JOIN producto pro ON pro.id_producto = p.id_producto where p.fecha_inicio > '2022-12-20'" , nativeQuery = true)
+    List<String[]> promNavidad();
 }
