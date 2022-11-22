@@ -6,9 +6,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RestController;
 import pe.edu.upc.organicmarketbackend.entities.DetalleOrden;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoDetalleOrden;
 import pe.edu.upc.organicmarketbackend.repositories.iDetalleOrdenRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.iDetalleOrdenService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,7 +51,22 @@ public class DetalleOrdenServiceImpl implements iDetalleOrdenService {
         return dR.findById(idOrden);
     }
 
+    @Override
+    public List<DetalleOrden> buscarpapa() {
+        return dR.buscarpapa();
+    }
 
+    @Override
+    public List<ResultadoDetalleOrden> listarproductos() {
+        List<ResultadoDetalleOrden> lista=new ArrayList<>();
+        dR.listarcantidad().forEach(y->{
+            ResultadoDetalleOrden dO=new ResultadoDetalleOrden();
+            dO.setProducto(y[0]);
+            dO.setCantidad(y[1]);
+            lista.add(dO);
+        });
+        return lista;
+    }
 
 
 }

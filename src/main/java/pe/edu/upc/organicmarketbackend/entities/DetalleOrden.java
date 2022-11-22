@@ -1,13 +1,7 @@
 package pe.edu.upc.organicmarketbackend.entities;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import java.io.Serializable;
 
@@ -22,13 +16,16 @@ public class DetalleOrden implements Serializable {
     @JoinColumn(name = "idProducto", nullable = false)
     private Producto producto;
 
+    @Column(name = "cantidad", length = 30, nullable = false)
+    private int cantidad;
+
     public DetalleOrden() {
-        super();
     }
 
-    public DetalleOrden(int idOrden, Producto producto) {
+    public DetalleOrden(int idOrden, Producto producto, int cantidad) {
         this.idOrden = idOrden;
         this.producto = producto;
+        this.cantidad = cantidad;
     }
 
     public int getIdOrden() {
@@ -45,5 +42,13 @@ public class DetalleOrden implements Serializable {
 
     public void setProducto(Producto producto) {
         this.producto = producto;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }
