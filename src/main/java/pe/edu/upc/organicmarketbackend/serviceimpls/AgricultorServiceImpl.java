@@ -2,9 +2,11 @@ package pe.edu.upc.organicmarketbackend.serviceimpls;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.upc.organicmarketbackend.entities.Agricultor;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoAgricultor;
 import pe.edu.upc.organicmarketbackend.repositories.iAgricultorRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.iAgricultorService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -45,6 +47,20 @@ public class AgricultorServiceImpl implements iAgricultorService {
     @Override
     public List<Agricultor> buscarmiraflores() {
         return aR.buscarmiraflores();
+    }
+
+    @Override
+    public List<ResultadoAgricultor> listardatos() {
+        List<ResultadoAgricultor> lista=new ArrayList<>();
+        aR.listardatos().forEach(y->{
+            ResultadoAgricultor re=  new ResultadoAgricultor();
+            re.setPersona(y[0]);
+            re.setDireccion(y[1]);
+            re.setTelefono(y[2]);
+            lista.add(re);
+        });
+
+        return lista;
     }
 
 

@@ -3,6 +3,7 @@ package pe.edu.upc.organicmarketbackend.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.organicmarketbackend.entities.Agricultor;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoAgricultor;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.iAgricultorService;
 
 import java.util.List;
@@ -51,6 +52,11 @@ public class AgricultorController {
     @GetMapping("/filtrarmiraflores")
     public List<Agricultor> buscarmiraflores(){
         return aService.buscarmiraflores();
+    }
+
+    @GetMapping("/datos")
+    public List<ResultadoAgricultor> listardatos(){
+        return aService.listardatos();
     }
 }
 

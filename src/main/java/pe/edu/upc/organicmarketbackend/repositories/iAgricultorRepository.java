@@ -18,6 +18,9 @@ public interface iAgricultorRepository extends JpaRepository<Agricultor,Integer>
     @Query(value = "select * from agricultor a where a.direccion like '%Miraflores'",nativeQuery = true)
     List<Agricultor> buscarmiraflores();
 
+    @Query(value ="select p.nombre_persona as persona, a.direccion as direccion, p.telefono_persona as telefono from agricultor a inner join persona p on p.id_persona = a.id_persona group by p.nombre_persona,  a.direccion, p.telefono_persona" ,nativeQuery = true)
+    List<String[]> listardatos();
+
 
 
     //Control barra espaciadora despues de la t en el list
