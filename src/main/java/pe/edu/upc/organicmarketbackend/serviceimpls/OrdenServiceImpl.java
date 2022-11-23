@@ -6,7 +6,10 @@ import pe.edu.upc.organicmarketbackend.entities.Orden;
 import pe.edu.upc.organicmarketbackend.repositories.IOrdenRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IOrdenService;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class OrdenServiceImpl implements IOrdenService {
     @Autowired
@@ -22,5 +25,15 @@ public class OrdenServiceImpl implements IOrdenService {
     public void delete(int idOrden) {pR.deleteById(idOrden);}
 
     @Override
-    public List<Orden> search(String fechaCompra) {return pR.searchByName(fechaCompra);}
+    public Optional<Orden> listarId(int idOrden) {return pR.findById(idOrden);}
+
+    public List<Orden> findByFechaCompra(Date fechaCompra){ return pR.findByFechaCompra(fechaCompra);}
+
+    @Override
+    public List<Orden> finByFechaEntrega(Date fechaEntrega) {return pR.findByFechaEntrega(fechaEntrega);}
+
+    @Override
+    public List<Orden> finByFechaEnvio(Date fechaEnvio) {return pR.findByFechaEnvio(fechaEnvio);}
+
+
 }

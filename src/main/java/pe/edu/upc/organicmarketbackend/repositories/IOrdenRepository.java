@@ -6,12 +6,16 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import pe.edu.upc.organicmarketbackend.entities.Orden;
 
+import java.util.Date;
 import java.util.List;
 
 @Repository
 public interface IOrdenRepository extends JpaRepository<Orden, Integer> {
 
-    @Query("SELECT m FROM Orden m WHERE lower(m.fechaCompra) like lower(concat('%',:fechaCompra,'%'))")
-    List<Orden> searchByName(@Param("fechaCompra") String fechaCompra);
+    List<Orden> findByFechaCompra(Date fechaCompra);
+
+    List<Orden> findByFechaEnvio (Date fechaEnvio);
+
+    List<Orden>findByFechaEntrega (Date fechaEntrega);
 
 }

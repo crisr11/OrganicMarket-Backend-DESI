@@ -27,9 +27,6 @@ public class Orden {
     @JsonSerialize(using = ToStringSerializer.class)
     private LocalDate fechaEntrega;
 
-    @Column(name = "cantidad", length = 30, nullable = false)
-    private int cantidad;
-
     @ManyToOne
     @JoinColumn (name="idAgricultor", nullable = false)
     private Agricultor agricultor;
@@ -38,12 +35,11 @@ public class Orden {
     @JoinColumn (name="idMayorista", nullable = false)
     private Mayorista mayorista;
 
-    public Orden(int idOrden, LocalDate fechaCompra, LocalDate fechaEnvio, LocalDate fechaEntrega, int cantidad, Agricultor agricultor, pe.edu.upc.organicmarketbackend.entities.Mayorista mayorista) {
+    public Orden(int idOrden, LocalDate fechaCompra, LocalDate fechaEnvio, LocalDate fechaEntrega, Agricultor agricultor, Mayorista mayorista) {
         this.idOrden = idOrden;
         this.fechaCompra = fechaCompra;
         this.fechaEnvio = fechaEnvio;
         this.fechaEntrega = fechaEntrega;
-        this.cantidad = cantidad;
         this.agricultor = agricultor;
         this.mayorista = mayorista;
     }
@@ -84,13 +80,6 @@ public class Orden {
         this.fechaEntrega = fechaEntrega;
     }
 
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
 
     public Agricultor getAgricultor() {
         return agricultor;

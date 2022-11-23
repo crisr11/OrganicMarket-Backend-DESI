@@ -6,6 +6,7 @@ import pe.edu.upc.organicmarketbackend.entities.Orden;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IOrdenService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/orden")
@@ -38,6 +39,11 @@ public class OrdenController {
     public List<Orden> buscar(@RequestBody Orden o){
         return null;
         //return oService.search(o.getIdOrden());
+        }
+
+    @GetMapping("/id")
+    public Optional<Orden> listarId(@PathVariable("id")Integer id){return oService.listarId(id);}
     }
 
-}
+
+
