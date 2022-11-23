@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pe.edu.upc.organicmarketbackend.entities.Promocion;
+import pe.edu.upc.organicmarketbackend.entities.Publicacion;
 import pe.edu.upc.organicmarketbackend.entities.Resultado;
 import pe.edu.upc.organicmarketbackend.repositories.IPromocionRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IPromocionService;
@@ -46,14 +47,15 @@ public class PromocionServiceImpl implements IPromocionService {
     }
 
     @Override
-    public List<Promocion> findByFechaInicio(Date fechaInicio) {
-        return promoR.findByFechaInicio(fechaInicio);
+    public List<Promocion> buscarPorProducto(String producto) {
+        return promoR.buscarProducto(producto);
     }
 
     @Override
-    public List<Promocion> findByFechaFin(Date fechaFin) {
-        return promoR.findByFechaFin(fechaFin);
+    public List<Promocion> vencenEstaSemana() {
+        return promoR.vencenproximos7dias();
     }
+
 
     @Override
     public List<Resultado> promoNavidad() {
