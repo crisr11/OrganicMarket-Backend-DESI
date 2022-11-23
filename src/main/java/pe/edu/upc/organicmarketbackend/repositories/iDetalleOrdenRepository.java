@@ -16,4 +16,9 @@ public interface iDetalleOrdenRepository extends JpaRepository<DetalleOrden,Inte
     @Query("from DetalleOrden d where d.producto.nameProducto like %:nameProducto%")
     List<DetalleOrden> buscarNombre(@Param("nameProducto")String nameProducto);
 
+    @Query(value = "select * from detalle_orden where cantidad in (select max(cantidad) from detalle_orden)",nativeQuery = true)
+    List<DetalleOrden> buscarpapa();
+    @Query(value = "select p.name_producto as producto, count(d.cantidad) as cantidad from detalle_orden d inner join producto p on d.id_producto=p.id_producto group by p.name_producto",nativeQuery = true)
+    List<String[]> listarcantidad();
+
 }
