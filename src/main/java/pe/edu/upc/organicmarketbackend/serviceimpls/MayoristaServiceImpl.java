@@ -8,6 +8,7 @@ import pe.edu.upc.organicmarketbackend.repositories.IMayoristaRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IMayoristaService;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MayoristaServiceImpl implements IMayoristaService {
@@ -29,7 +30,12 @@ public class MayoristaServiceImpl implements IMayoristaService {
     }
 
     @Override
-    public List<Mayorista> search(String name) {
-        return mRepo.searchByName(name);
+    public List<Mayorista> search(String ruc) {
+        return mRepo.searchByRUC(ruc);
+    }
+
+    @Override
+    public Optional<Mayorista> listID(int idMayorista) {
+        return mRepo.findById(idMayorista);
     }
 }

@@ -11,6 +11,6 @@ import java.util.List;
 
 @Repository
 public interface IMayoristaRepository extends JpaRepository<Mayorista,Integer> {
-    @Query("SELECT m FROM Mayorista m WHERE lower(m.nameMayorista) like lower(concat('%',:nameMayorista,'%'))")
-    List<Mayorista> searchByName(@Param("nameMayorista") String nameMayorista);
+    @Query("SELECT m FROM Mayorista m WHERE lower(m.RUCMayorista) like lower(concat('%',:RUCMayorista,'%'))")
+    List<Mayorista> searchByRUC(@Param("RUCMayorista") String RUCMayorista);
 }

@@ -8,12 +8,24 @@ public class Mayorista {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idMayorista;
-    @Column(name = "Nombre", length = 60,nullable = false)
-    private String nameMayorista;
     @Column(name = "RUC", length = 60,nullable = false)
     private String RUCMayorista;
     @Column(name = "Rubro", length = 60,nullable = false)
     private String rubroMayorista;
+
+    @ManyToOne
+    @JoinColumn(name = "idPersona", nullable = false)
+    private Persona persona;
+
+    public Mayorista() {
+    }
+
+    public Mayorista(int idMayorista, String RUCMayorista, String rubroMayorista, Persona persona) {
+        this.idMayorista = idMayorista;
+        this.RUCMayorista = RUCMayorista;
+        this.rubroMayorista = rubroMayorista;
+        this.persona = persona;
+    }
 
     public int getIdMayorista() {
         return idMayorista;
@@ -21,14 +33,6 @@ public class Mayorista {
 
     public void setIdMayorista(int idMayorista) {
         this.idMayorista = idMayorista;
-    }
-
-    public String getNameMayorista() {
-        return nameMayorista;
-    }
-
-    public void setNameMayorista(String nameMayorista) {
-        this.nameMayorista = nameMayorista;
     }
 
     public String getRUCMayorista() {
@@ -47,13 +51,11 @@ public class Mayorista {
         this.rubroMayorista = rubroMayorista;
     }
 
-    public Mayorista(int idMayorista, String nameMayorista, String RUCMayorista, String rubroMayorista) {
-        this.idMayorista = idMayorista;
-        this.nameMayorista = nameMayorista;
-        this.RUCMayorista = RUCMayorista;
-        this.rubroMayorista = rubroMayorista;
+    public Persona getPersona() {
+        return persona;
     }
 
-    public Mayorista() {
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 }
