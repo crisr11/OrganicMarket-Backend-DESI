@@ -3,6 +3,7 @@ package pe.edu.upc.organicmarketbackend.serviceimpls;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pe.edu.upc.organicmarketbackend.entities.Orden;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoOrden;
 import pe.edu.upc.organicmarketbackend.repositories.IOrdenRepository;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IOrdenService;
 
@@ -34,6 +35,9 @@ public class OrdenServiceImpl implements IOrdenService {
 
     @Override
     public List<Orden> finByFechaEnvio(Date fechaEnvio) {return pR.findByFechaEnvio(fechaEnvio);}
+
+    @Override
+    public List<Orden> buscarFechaCompra() {return pR.buscarFechaCompra();}
 
 
 }

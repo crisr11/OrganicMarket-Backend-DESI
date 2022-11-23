@@ -18,4 +18,8 @@ public interface IOrdenRepository extends JpaRepository<Orden, Integer> {
 
     List<Orden>findByFechaEntrega (Date fechaEntrega);
 
+    @Query(value="select * from orden o where o.fechaCompra>'2022-06-01'",nativeQuery = true)
+    List<Orden>buscarFechaCompra();
+
+
 }

@@ -43,7 +43,11 @@ public class OrdenController {
 
     @GetMapping("/id")
     public Optional<Orden> listarId(@PathVariable("id")Integer id){return oService.listarId(id);}
-    }
+
+    @GetMapping("/buscarFecha")
+    public List<Orden> buscarFechaCompra() { return oService.buscarFechaCompra();}
+}
+
 
 
 

@@ -1,6 +1,7 @@
 package pe.edu.upc.organicmarketbackend.serviceinterfaces;
 
 import pe.edu.upc.organicmarketbackend.entities.Orden;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoOrden;
 
 
 import java.util.Date;
@@ -22,5 +23,7 @@ public interface IOrdenService {
     List<Orden>finByFechaEntrega(Date fechaEntrega);
 
     List<Orden>finByFechaEnvio(Date fechaEnvio);
+
+    List<Orden>buscarFechaCompra();
 
 }
