@@ -26,4 +26,6 @@ public interface IOrdenService {
 
     List<Orden>buscarFechaCompra();
 
+    List<ResultadoOrden> buscarCantidadOrdenAgricultor();
+
 }

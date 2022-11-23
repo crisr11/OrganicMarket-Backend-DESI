@@ -39,5 +39,8 @@ public class OrdenServiceImpl implements IOrdenService {
     @Override
     public List<Orden> buscarFechaCompra() {return pR.buscarFechaCompra();}
 
+    @Override
+    public List<ResultadoOrden> buscarCantidadOrdenAgricultor() {return buscarCantidadOrdenAgricultor();}
+
 
 }

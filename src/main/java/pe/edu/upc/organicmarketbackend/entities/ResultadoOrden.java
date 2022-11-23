@@ -2,15 +2,13 @@ package pe.edu.upc.organicmarketbackend.entities;
 
 public class ResultadoOrden {
     private String orden;
-    private String fechaCompra;
     private String cantidad;
 
     public ResultadoOrden() {
     }
 
-    public ResultadoOrden(String orden, String fechaCompra, String cantidad) {
+    public ResultadoOrden(String orden, String cantidad) {
         this.orden = orden;
-        this.fechaCompra = fechaCompra;
         this.cantidad = cantidad;
     }
 
@@ -20,14 +18,6 @@ public class ResultadoOrden {
 
     public void setOrden(String orden) {
         this.orden = orden;
-    }
-
-    public String getFechaCompra() {
-        return fechaCompra;
-    }
-
-    public void setFechaCompra(String fechaCompra) {
-        this.fechaCompra = fechaCompra;
     }
 
     public String getCantidad() {

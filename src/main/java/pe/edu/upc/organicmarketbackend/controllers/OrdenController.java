@@ -3,6 +3,7 @@ package pe.edu.upc.organicmarketbackend.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.organicmarketbackend.entities.Orden;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoOrden;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IOrdenService;
 
 import java.util.List;
@@ -46,6 +47,8 @@ public class OrdenController {
 
     @GetMapping("/buscarFecha")
     public List<Orden> buscarFechaCompra() { return oService.buscarFechaCompra();}
+    @GetMapping("/cantidades")
+    public List<ResultadoOrden> buscarCantidadOrdenAgricultor(){ return oService.buscarCantidadOrdenAgricultor();}
 }
 
 

@@ -20,6 +20,8 @@ public interface IOrdenRepository extends JpaRepository<Orden, Integer> {
 
     @Query(value="select * from orden o where o.fechaCompra>'2022-06-01'",nativeQuery = true)
     List<Orden>buscarFechaCompra();
+    @Query(value = "select p.nombre_persona, count(i.idOrden) as cantidad from Orden i inner join persona p on i.id_persona=i.id_persona group by p.name_propietario", nativeQuery = true)
+    List<String[]>buscarCantidadOrdenAgricultor();
 
 
 }
