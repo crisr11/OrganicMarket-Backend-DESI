@@ -13,7 +13,7 @@ import java.util.List;
 
 @Repository
 public interface IPromocionRepository extends JpaRepository<Promocion, Integer> {
-    @Query("from Promocion p join Producto r on p.idPromocion=r.idProducto where r.nameProducto like %:producto%")
+    @Query("from Promocion p join Producto r on p.producto.idProducto=r.idProducto where r.nameProducto like %:producto%")
     List<Promocion> buscarProducto(@Param("producto") String producto);
 
     @Query(value ="SELECT * FROM promocion p where p.fecha_fin > CURRENT_DATE - interval '1' day and p.fecha_fin < CURRENT_DATE + interval '8' day ORDER BY p.fecha_fin ASC" ,nativeQuery = true)
