@@ -4,6 +4,7 @@ import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.organicmarketbackend.entities.DetalleOrden;
+import pe.edu.upc.organicmarketbackend.entities.ResultadoDetalleOrden;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.iDetalleOrdenService;
 
 import java.text.ParseException;
@@ -45,6 +46,14 @@ public class DetalleOrdenController {
     @GetMapping("/{id}")
     public Optional<DetalleOrden>ListarId(@PathVariable("id") Integer id){
         return dService.ListariD(id);
+    }
+    @GetMapping("/buscarpapas")
+    public List<DetalleOrden> buscarpapa(){
+        return dService.buscarpapa();
+    }
+    @GetMapping("/productoscantidad")
+    public List<ResultadoDetalleOrden> listarproductos(){
+        return dService.listarproductos();
     }
 
 }

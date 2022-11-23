@@ -7,6 +7,7 @@ import pe.edu.upc.organicmarketbackend.serviceinterfaces.IMayoristaService;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IMayoristaService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/mayoristas")
@@ -32,6 +33,11 @@ public class MayoristaController {
     }
     @PostMapping("/buscar")
     public List<Mayorista> buscar(@RequestBody Mayorista m){
-        return mService.search(m.getNameMayorista());
+        return mService.search(m.getRUCMayorista());
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Mayorista> listarID(@PathVariable("id") Integer id){
+        return mService.listID(id);
     }
 }
