@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Query Producto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/entities/ResultadoPublicacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/PromocionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/PromocionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/PublicacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/PublicacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IPromocionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IPromocionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IPublicacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IPublicacionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/PromocionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/PromocionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/PublicacionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/PublicacionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPromocionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPromocionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPublicacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IPublicacionService.java" afterDir="false" />
-    </list>
+    <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="Orden" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Alexis-branch" />
@@ -71,26 +60,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "47b3aff7d10d6587f653fdfa4342a3b6"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;47b3aff7d10d6587f653fdfa4342a3b6&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="OrganicmarketbackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="organicmarketbackend" />
@@ -214,6 +203,7 @@
     <MESSAGE value="Configuracion para heroku" />
     <MESSAGE value="_" />
     <MESSAGE value="Query Producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query Producto" />
+    <MESSAGE value="Orden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Orden" />
   </component>
 </project>
