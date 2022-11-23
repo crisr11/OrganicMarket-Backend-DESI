@@ -3,6 +3,9 @@ package pe.edu.upc.organicmarketbackend.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.organicmarketbackend.entities.Persona;
+import pe.edu.upc.organicmarketbackend.entities.ReporteAgriOrden;
+import pe.edu.upc.organicmarketbackend.entities.ReportePersona1;
+import pe.edu.upc.organicmarketbackend.entities.ReportePersona2;
 import pe.edu.upc.organicmarketbackend.serviceinterfaces.IPersonaService;
 
 import java.util.List;
@@ -37,6 +40,18 @@ public class PersonaController {
     @GetMapping("/{id}")
     public Optional<Persona> listarId(@PathVariable("id")Integer id){return pService.listarId(id);}
 
+    @GetMapping("/filtrarDniASC")
+    public List<ReportePersona1>buscarDniOrdenASC(){
+        return pService.buscarDniOrdenASC();
+    }
+    @GetMapping("/filtrarDniDESC")
+    public List<ReportePersona2>buscarDniOrdenDESC(){
+        return pService.buscarDniOrdenDESC();
+    }
+    @GetMapping("/buscarCompras")
+    public List<ReporteAgriOrden>buscarCompras(){
+        return pService.buscarCompras();
+    }
 }
 
 
