@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01fee449-a13b-4316-98bf-3a026829cf95" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_10_2022_17_32__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/OrdenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/controllers/OrdenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/entities/ResultadoOrden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/entities/ResultadoOrden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organicmarketbackend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/organicmarketbackend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IOrdenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/repositories/IOrdenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/OrdenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceimpls/OrdenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IOrdenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upc/organicmarketbackend/serviceinterfaces/IOrdenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +113,7 @@
       <workItem from="1669140566566" duration="12950000" />
       <workItem from="1669167430532" duration="12744000" />
       <workItem from="1669204613983" duration="9558000" />
+      <workItem from="1669251286032" duration="2943000" />
     </task>
     <task id="LOCAL-00001" summary="Merge Alexis Branch">
       <created>1667690018679</created>
