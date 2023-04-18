@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/Desktop/demo/demo.iml" filepath="$USER_HOME$/Desktop/demo/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/organicmarketbackend.iml" filepath="$PROJECT_DIR$/organicmarketbackend.iml" />
     </modules>
   </component>
 </project>
